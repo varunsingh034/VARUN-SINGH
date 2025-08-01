@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    cursor: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#root{
+    height: 100vh;
+    background-color: gray;
+}
+
+
+/* cursor configure */
+
+.cursor-dot, .cursor-circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out;
+  z-index: 10000;  
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00E0C7;
+}
+     
+.cursor-circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 224, 199, 0.5);
+    transition: all 0.2s ease-out;
+}
+
+.cursor-circle.hover{
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.5;
+}
