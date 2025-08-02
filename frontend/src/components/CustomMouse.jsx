@@ -31,7 +31,7 @@ const CustomMouse = () => {
     window.addEventListener('mousemove', moveCursor);
 
     const interactiveElements = document.querySelectorAll(
-      'a, button, input, textarea'
+      'a, button, input, h1'
     );
 
     interactiveElements.forEach((el) => {
