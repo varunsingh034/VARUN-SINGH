@@ -1,20 +1,53 @@
 import React from 'react'
+import AboutMeCardEdu from './AboutMeCardEdu.jsx'
 
 const AboutMe = () => {
   return (
-    <div id='about' className='about'>
-        <h1 className='text-5xl'>About Me</h1>
+  <>
+    <div id='about' className='about bg-blue-500'>
 
-        <div className='bg-black h-2 w-full rounded'></div>
+      <h1 className='text-5xl text-white z-10 text-center'>About Me</h1>
+      <div className='bg-black h-2 w-full rounded' />
 
-        <div className='about-info'>
-            <p className='text-2xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati omnis recusandae fuga molestias perferendis a, quasi, minima maiores molestiae hic eum id ipsum dolorem quibusdam illum, earum illo minus inventore!</p>
+      <div className='about-inner bg-white'>
 
-            <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus obcaecati enim quo repellat. Maiores quos voluptas ipsum laborum veniam? Obcaecati, id odio omnis esse eveniet accusantium magni in culpa optio corrupti dolore, suscipit ea cupiditate? Quis molestias possimus sapiente?</p>
+        <div className="about-info bg-red-500 h-40 w-40">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id tenetur deleniti iure. Modi minus at est numquam deserunt expedita eveniet ullam, recusandae quae vel aliquam assumenda dicta laborum ad repellendus facilis dolorum aliquid laboriosam quas tempora? Eaque at sapiente quo eum quibusdam, temporibus, mollitia accusantium nobis, inventore quod quos? Deleniti.</p>
+
+
+
 
         </div>
+
+
+        <div className="about-exp bg-amber-400 h-40 w-40">
+
+          <AboutMeCardEdu title='Education' institute='Arya Institute of Engineering & Technology' branch='Computer Science and Engineering' cgpa='7.55'/>
+
         
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+          
+
+
+      
+      </div>
+
     </div>
+  </>
   )
 }
 
