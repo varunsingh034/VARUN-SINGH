@@ -136,7 +136,7 @@ html,body{
 }
 
 
-#home, #about{
+#home, #about, #skill{
   z-index: 1;
 }
 
@@ -239,5 +239,22 @@ html,body{
 }
 
 
+/* Skill board */
 
+.skill{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: yellow;
+}
 
+.skillboard{
+  height: 400px;
+  width: 100%;
+  background-color: red;
+}
