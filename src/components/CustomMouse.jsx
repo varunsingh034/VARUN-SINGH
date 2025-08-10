@@ -31,7 +31,7 @@ const CustomMouse = () => {
     window.addEventListener('mousemove', moveCursor);
 
     const interactiveElements = document.querySelectorAll(
-      'a, button, input, h1'
+      'a, button, input, .skillbox'
     );
 
     interactiveElements.forEach((el) => {
